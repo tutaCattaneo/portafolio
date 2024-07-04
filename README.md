@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Portafolio
 
-First, run the development server:
+Este es el proyecto de mi portafolio personal, que incluye información sobre mis habilidades, proyectos y contacto.
+
+## Requisitos
+
+- Node.js (versión 14 o superior)
+- npm (versión 6 o superior) o yarn (versión 1.22 o superior)
+
+## Instalación
+
+Sigue estos pasos para instalar y ejecutar el proyecto localmente:
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/tutaCattaneo/portafolio.git
+   ```
+
+2. Navega al directorio del proyecto:
+
+   ```bash
+   cd portafolio
+   ```
+
+3. Asegúrate de estar en la rama `master`:
+
+   ```bash
+   git checkout master
+   ```
+
+4. Instala las dependencias:
+
+   Usando npm:
+
+   ```bash
+   npm install
+   ```
+
+   O usando yarn:
+
+   ```bash
+   yarn install
+   ```
+
+## Ejecución
+
+Para ejecutar el proyecto localmente, utiliza el siguiente comando:
+
+Usando npm:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O usando yarn:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Abre tu navegador y ve a `http://localhost:3000` para ver el proyecto en ejecución.
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+En este proyecto están disponibles los siguientes scripts:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `dev`: Inicia el servidor de desarrollo.
+- `build`: Compila el proyecto para producción.
+- `start`: Inicia el servidor en modo producción.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Estructura del Proyecto
 
-## Deploy on Vercel
+```plaintext
+.
+├── public/                     # Archivos públicos (imágenes, iconos, etc.)
+├── src/
+│   ├── app/
+│   │   ├── components/         # Componentes de React
+│   │   │   ├── About.js        # Componente About
+│   │   │   ├── ContactForm.js  # Componente ContactForm
+│   │   │   ├── Header.js       # Componente Header
+│   │   │   ├── Interests.js    # Componente Interests
+│   │   ├── styles/             # Archivos de estilos CSS
+│   │   │   ├── About.module.css
+│   │   │   ├── ContactForm.module.css
+│   │   │   ├── Header.module.css
+│   │   │   ├── Home.module.css
+│   │   │   ├── Interests.module.css
+│   ├── favicon.ico             # Icono de la aplicación
+│   ├── globals.css             # Estilos globales
+│   ├── layout.js               # Componente Layout
+│   ├── page.js                 # Página principal
+│   ├── page.module.css         # Estilos de la página principal
+├── .eslintrc.json              # Configuración de ESLint
+├── .gitignore                  # Archivos a ignorar por Git
+├── README.md                   # Documentación del proyecto
+├── jsconfig.json               # Configuración de JavaScript
+├── next.config.mjs             # Configuración de Next.js
+├── package-lock.json           # Archivo de bloqueo de dependencias (npm)
+├── package.json                # Archivo de configuración del proyecto
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
