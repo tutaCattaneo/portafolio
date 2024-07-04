@@ -1,0 +1,57 @@
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffc400; /* Amarillo opaco */
+  color: #333333; /* Negro opaco */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  border: 3px solid #333333; /* Borde negro opaco */
+}
+
+.profileImage:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.contactInfo {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column; /* Mantén la dirección en columna */
+  align-items: center; /* Alinea los elementos en el centro */
+  gap: 1px; /* Reduce el espacio entre los elementos */
+  font-size: 1em;
+}
+
+.icon {
+  width: 16px; /* Ajusta el tamaño del icono */
+  height: 16px; /* Ajusta el tamaño del icono */
+  margin-right: 8px;
+  color: inherit; /* Hereda el color del texto */
+}
+
+.link {
+  color: #333333; /* Color del texto del enlace */
+  text-decoration: none; /* Sin subrayado */
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón por encima */
+}
+
+@media (min-width: 768px) {
+  .contactInfo {
+    font-size: 1.2em;
+  }
+}

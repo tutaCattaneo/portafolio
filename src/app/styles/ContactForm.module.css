@@ -1,0 +1,125 @@
+.contactForm {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto 50px auto; /* Espacio inferior aumentado */
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; /* Aplicar fuente Montserrat */
+}
+
+.contactForm h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.contactForm-content {
+  padding: 20px;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.contactForm label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 15px;
+  border: 1px solid #7e7d7d;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333333;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  background-color: #d1cfcf; /* Fondo gris claro */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #ffc400;
+  box-shadow: 0 0 5px rgba(255, 196, 0, 0.5);
+  outline: none;
+}
+
+.contactForm textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contactForm button {
+  padding: 15px 50px;
+  background-color: #ffc400;
+  border: none;
+  border-radius: 5px;
+  color: #333333;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  min-width: 200px;
+}
+
+.contactForm button:hover {
+  background-color: #e6ac00;
+  transform: scale(1.05);
+}
+
+.contactForm .successMessage {
+  margin-top: 20px;
+  text-align: center;
+  color: #4caf50;
+  font-size: 1.2em;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.contactForm .fadeOut {
+  opacity: 0;
+}
+
+/* Media Query para dispositivos pequeños */
+@media (max-width: 768px) {
+  .contactForm {
+    padding: 20px;
+    width: calc(100% - 20px);
+  }
+
+  .contactForm-content {
+    padding: 15px;
+  }
+
+  .contactForm label {
+    font-size: 1em;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 1em;
+  }
+
+  .contactForm button {
+    font-size: 1em;
+    width: auto;
+  }
+
+  .contactForm .successMessage {
+    font-size: 1em;
+  }
+}

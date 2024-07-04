@@ -1,0 +1,29 @@
+/* About.module.css */
+.about {
+  cursor: pointer;
+  
+}
+
+.header {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+  color: #e2e2e2; /* Texto blanco */
+  
+}
+
+.content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 20px;
+}
+
+.open {
+  max-height: 200px; /* Ajusta este valor según el contenido */
+  padding: 20px;
+}
+
+.content p {
+  margin: 0;
+}

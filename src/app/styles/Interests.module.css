@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.card {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto 50px auto;
+  max-width: 500px; /* Ajustar el ancho máximo */
+  width: calc(100% - 40px); /* Ajustar el ancho para que siempre haya espacio a los lados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.header {
+  margin: 0;
+  font-size: 1.5em;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif; /* Aplicar la fuente Montserrat */
+}
+
+.content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 20px;
+}
+
+.content.open {
+  max-height: 1000px; /* Asegurar un mayor max-height */
+  padding: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  margin: 10px 0;
+}
+
+.itemHeader {
+  background-color: #444444;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.itemContent {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 20px;
+}
+
+.itemContent.open {
+  max-height: 1000px; /* Ajustar el max-height */
+  padding: 1px;
+}
+
+.subList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subItem {
+  margin: 10px 0;
+}
+
+.subItemHeader {
+  background-color: #555555;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.subItemContent {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 20px;
+}
+
+.subItemContent.open {
+  max-height: 300px; /* Ajustar el max-height */
+  padding: 10px 20px;
+}
+
+.itemContent p,
+.subItemContent p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.technologiesList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  columns: 2; /* Mostrar las tecnologías en dos columnas */
+  column-gap: 10px; /* Añadir espacio entre las columnas */
+}
+
+.technologiesList li {
+  margin-bottom: 5px;
+}
+
+/* Media Query para dispositivos pequeños */
+@media (max-width: 768px) {
+  .card {
+    padding: 100px;
+    width: calc(100% - 20px); /* Asegurar que el contenedor no exceda el ancho máximo y haya espacio a los lados */
+  }
+
+ 
+
+  .header {
+    font-size: 1.5em;
+  }
+
+  .itemHeader {
+    font-size: 1em;
+  }
+
+  .subItemHeader {
+    font-size: 1em;
+  }
+
+  .technologiesList {
+    columns: 1; /* Cambiar a una columna en dispositivos pequeños */
+  }
+}

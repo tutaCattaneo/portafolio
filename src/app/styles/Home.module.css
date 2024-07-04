@@ -1,0 +1,36 @@
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.card {
+  background-color: #333333; /* Fondo gris oscuro para las cards */
+  color: #ffffff; /* Texto blanco */
+  border: 1px solid #444444; /* Un borde ligeramente más claro */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px; /* Ajustar el ancho máximo de cada card */
+  max-width: 400px; /* Ajustar el ancho máximo de cada card */
+  margin-bottom: 20px; /* Espacio inferior para cada card */
+  box-sizing: border-box; /* Asegurar que padding y border se incluyan en el tamaño total */
+  text-align: center;
+}
+
+/* Media Query para dispositivos pequeños */
+@media (max-width: 768px) {
+  .cardsContainer {
+    flex-direction: column; /* Cambia la dirección a columna para dispositivos pequeños */
+    align-items: center; /* Asegura que los elementos estén centrados */
+  }
+  
+  .card {
+    max-width: 50%; /* Asegura que las cards ocupen todo el ancho del contenedor */
+    flex: 1 1 100%; /* Asegura que las cards ocupen todo el ancho del contenedor */
+    margin: 10px 0; /* Espacio superior e inferior para las cards en móviles */
+  }
+}
